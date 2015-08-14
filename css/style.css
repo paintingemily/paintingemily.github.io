@@ -1,0 +1,1181 @@
+/* 
+
+Colors
+
+Orange: #F79622
+RGB (247, 150, 34)
+
+D.GREY: #303030
+RGB (30, 30, 30)
+
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain) */ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; } /* HTML5 display-role reset for older browsers */ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; } body { line-height: 1; } ol, ul { list-style: none; } blockquote, q { quotes: none; } blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; } table { border-collapse: collapse; border-spacing: 0; }
+
+
+@font-face {
+    font-family: 'nexa_lightregular';
+    src: url('fonts/Nexa_Free_Light-webfont.eot');
+    src: url('fonts/Nexa_Free_Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Nexa_Free_Light-webfont.woff') format('woff'),
+         url('fonts/Nexa_Free_Light-webfont.ttf') format('truetype'),
+         url('fonts/Nexa_Free_Light-webfont.svg#nexa_lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+
+    font-family: 'nexa_boldregular';
+    src: url('fonts/Nexa_Free_Bold-webfont.eot');
+    src: url('fonts/Nexa_Free_Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Nexa_Free_Bold-webfont.woff') format('woff'),
+         url('fonts/Nexa_Free_Bold-webfont.ttf') format('truetype'),
+         url('fonts/Nexa_Free_Bold-webfont.svg#nexa_boldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html {
+    height: 100%;
+}
+
+p, h1, h2, h3, li {
+	text-align:center;
+	font-family:'nexa_lightregular', helvetica, sans-serif;
+	-webkit-margin-before:0;
+	-webkit-margin-after:0;
+}
+
+
+h1 {
+	font-size:55px;
+	line-height: 70px;
+}
+
+h2 {
+	font-size:36px;
+	line-height:48px;
+}
+
+h3 {
+	font-size:24px;
+	line-height:32px;
+}
+
+p {
+	font-size:18px;
+	line-height:24px;
+}
+
+.offset {
+	height:1px;
+}
+
+nav {
+	height: 80px;
+	width:100%;
+	padding:0 30px;
+	position:absolute;
+	top:0;
+	background:rgba(255,255,255,.75);
+	position:fixed;
+	z-index: 5;
+}
+
+nav p {
+	display:inline-block;
+	text-align:left;
+	padding-left:20px;
+	line-height:80px;
+}
+
+ul {
+	list-style: none;
+	line-height:80px;
+	float:right;
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
+}
+
+li {
+	display:inline-block;
+}
+
+li a {
+	font-size:18px;
+	color:#303030;
+	padding:0 10px;
+	text-decoration:none;
+}
+
+li:hover {
+	opacity:.5;
+}
+
+li:active {
+	color:#f7941e;
+}
+
+.orange {
+	color:#f7941e;
+}
+
+.white {
+	color:white;
+}
+
+.wrapper {
+	margin-top:80px;
+}
+
+/* Intro Section */
+
+
+.intro-wrapper {
+	width:100%;
+	height:auto;
+	background:url("images/home-header-2.jpg") center center;
+	background-size:cover;
+}
+
+.intro h2 {
+	animation: fadein 2s;
+	-webkit-animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+.grid {
+	padding:0 20px;
+}
+
+.grid.intro {
+	padding:100px 0;
+}
+
+.section {
+	padding:100px 0;
+}
+
+
+/* Work Section */
+
+.circle {
+	border-radius: 50%;
+	position:relative;
+	background:gray;
+	margin:0 auto;
+	-webkit-transition:all 0.2s ease-in;
+	-moz-transition:all 0.2s ease-in;
+}
+
+/* .height-equal:hover .circle{
+	border-radius:0;
+	width:100%;
+	height:250px;
+	width:250px;
+} */
+
+.height-equal {
+	height:250px;
+	position:relative;
+}
+
+.feature {
+	height:200px;
+	width:200px;
+	margin:0 auto;
+}
+
+.small {
+	height:150px;
+	width:150px;
+}
+
+.right {
+	float:right;
+}
+
+.grid {
+	padding-top:50px;
+}
+
+/* ABOUT SECTION */
+
+.thought-bubble {
+	border-radius:10px;
+	border:3px solid #e1e1e1;
+	width:50%;
+	margin:0 auto;
+	padding:50px;
+}
+
+.thought-bubble a {
+	text-decoration:none;
+	font-weight:bolder;
+	color:#303030;
+	font-family:"nexa_boldregular";
+}
+
+.quote-bottom {
+	width:40px;
+	height:40px;
+	margin:0 auto;
+	position:relative;
+}
+
+.quote-bottom .illustration {
+	background:url("images/quote-bottom.png") center no-repeat;
+	position:absolute;
+	width:40px;
+	height:40px;
+	top: -7px;
+}
+
+.about h2 {
+	margin-bottom:50px;
+}
+
+.mini-me {
+	background:url("images/mini-mes.jpg") left no-repeat;
+	height: 230px;
+	width: 180px;
+	animation: minifadeout 18s infinite 0s;
+	-webkit-animation: minifadeout 18s infinite 0s;
+}
+
+.box.minis {
+	height:auto;
+}
+
+/*
+
+.mini-me2 {
+	background:url("images/mini-mes.jpg") no-repeat;
+	background-position:-186px 0;
+	height: 230px;
+	width: 180px;
+	position:absolute;
+	opacity:0;
+	animation: minifadein 18s infinite 0s;
+	-webkit-animation: minifadein 18s infinite 0s;
+	animation-delay:6s;
+	-webkit-animation-delay:6s;
+}  
+
+@keyframes minifadein{
+    0% {opacity:0; animation-timing-function: ease-in; }
+    15% {opacity:1; animation-timing-function: ease-out; }
+    33% {opacity:1;}
+    50% {opacity:0;}
+    100% {opacity:0;}
+} 
+@-webkit-keyframes minifadein{
+    0% {opacity:0; -webkit-animation-timing-function: ease-in;}
+    15% {opacity:1; -webkit-animation-timing-function: ease-out; }
+    33% {opacity:1;}
+    50% {opacity:0;}
+    100% {opacity:0;}
+}
+
+@keyframes minifadeout{
+    0% {opacity:1; animation-timing-function: ease-in; }
+    15% {opacity:1; animation-timing-function: ease-out; }
+    33% {opacity:1;}
+    50% {opacity:0;}
+    100% {opacity:0;}
+}  
+@-webkit-keyframes minifadeout{
+    0% {opacity:1;}
+    15% {opacity:1; }
+    33% {opacity:1; -webkit-animation-timing-function: ease-out;}
+    50% {opacity:0;}
+    100% {opacity:1;}
+} */
+
+
+/*
+.mini-me3 {
+	background:url("images/mini-mes.jpg") no-repeat;
+	background-position:-367px 0;
+	height: 230px;
+	width: 180px;
+	position:absolute;
+	opacity:0;
+	animation: minifadein 18s ease-in infinite 0s;
+	-webkit-animation: minifadein 18s infinite 0s;
+	animation-delay:12s;
+	-webkit-animation-delay:12s;
+}   */
+
+/* FOOTER SECTION */
+
+footer {
+	background:#ebebeb;
+	padding:40px 0;
+}
+
+.social {
+	width:100%;
+}
+
+.social-icons {
+	margin:0 auto;
+	padding:0;
+	min-width:0;
+}
+
+.social-icons div {
+	height:32px;
+	width:32.5px;
+	padding: 0 7.5px;
+}
+
+ .social-icons a {
+ 	display:inline-block;
+ 	vertical-align: top;
+ }
+
+ .social ul {
+ 	float:none;
+ }
+
+.first {
+ 	float:right;
+ }
+
+.last {
+	float:left;
+}
+
+ .social .col-1-3 {
+ 	padding:0;
+ }
+
+.twitter {
+	background:url("images/social-icons.png") no-repeat left;
+}
+
+.linkedin {
+	background:url("images/social-icons.png") no-repeat center;
+}
+
+.email {
+	background:url("images/social-icons.png") no-repeat right;
+}
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+-------- Case Study CSS ------------ */
+
+.first-row {
+	border-top:1px solid #737373;
+}
+
+.area h1,.area h2,.area h3,.area p{
+	padding:100px;
+}
+
+.title-header h1{
+	margin-top:100px;
+	padding:50px 50px 0 50px;
+	border-bottom:1px solid white;
+	animation: fadein 2s;
+	-webkit-animation: fadein 2s;
+	/* background:rgba(255,255,255,.5); */
+}
+
+.title-header h2{
+	padding:10px 50px 50px 50px;
+	animation: fadein 2s;
+	-webkit-animation: fadein 2s;
+	/* background:rgba(255,255,255,.5); */
+}
+
+.title-header {
+	height:550px;
+	width:100%;
+	background-size:cover;
+}
+
+.intro-copy {
+	height:550px;
+	width:100%;
+	background:white;
+}
+
+.intro-copy h3 {
+	padding:100px 200px;
+}
+
+.area {
+	height:550px;
+	width:100%;
+}
+
+.color-area {
+	height:550px;
+	width:100%;
+}
+
+.box {
+    width: 100%;
+    height: 550px;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+
+    display: -moz-box;
+    -moz-box-orient: vertical;
+    -moz-box-pack: center;
+    -moz-box-align: center;
+
+    display: box;
+    box-orient: vertical;
+    box-pack: center;
+    box-align: center;
+}
+
+.title-header .grid {
+	padding:0;
+}
+
+.solution {
+	background:#404040;
+}
+
+.cosplay .solution {
+	background:#303030;
+}
+
+.large-image {
+	width:100%;
+	height:550px;
+}
+
+.mobile-shot {
+	background:orange;
+	height:250px;
+}
+
+.ibeacon {
+	background:url("images/cosplay-ibeacon-2.jpg") center center no-repeat;
+	background-size:cover;
+}
+
+.ibeacon-text {
+	width:50%;
+	float:right;
+	background:rgba(255,255,255,.5);
+}
+
+.ibeacon-text h3 {
+	padding: 100px 50px;
+	text-align:left;
+}
+
+.clique-level {
+	background:url("images/clique-levels.jpg") center center no-repeat;
+	background-size:cover;
+}
+
+.clique-text {
+	width:50%;
+	float:right;
+}
+
+.clique-text h3 {
+	padding: 100px 50px;
+	text-align:left;
+}
+
+/* Case Study Images */
+
+.sdcc .title-header{
+	background:url("images/iphone-mockup-white.jpg") center center no-repeat;
+	background-size:cover;
+}
+
+.cosplay .title-header {
+	background:url("images/cosplay-connect-header.jpg") center center no-repeat;
+	background-size:cover;
+}
+
+.glass .title-header {
+	background:url("images/glass-head.jpg") center center no-repeat;
+	background-size:cover;
+}
+
+.forsaken .title-header {
+	background:url("images/forsaken-head.jpg") center center no-repeat;
+	background-size:cover;
+}
+
+.clique .title-header {
+	background:url("images/clique-head.jpg") center center no-repeat;
+	background-size:cover;
+}
+
+.impact .title-header {
+	background:url("images/impact-recruiting.jpg") center center no-repeat;
+	background-size:cover;
+}
+
+.glass .large-image {
+	background:url("images/glass-titles.jpg") center center no-repeat;
+	background-size:cover;
+}
+
+.forsaken .large-image {
+	background:url("images/forsake-both.jpg") center center no-repeat;
+	background-size:cover;
+}
+
+.impact .large-image {
+	background:url("images/impact-code.jpg") center center no-repeat;
+	background-size:cover;
+}
+
+.impact .large-image.finish {
+	background:url("images/impact-finish.jpg") center center no-repeat;
+	background-size:cover;
+}
+
+.sdcc .large-image{
+	background:url("images/SDCC-Workspace.jpg") center center no-repeat;
+	background-size:cover;
+}
+
+.cosplay .large-image{
+	background:url("images/cosplay-screens.jpg") center center no-repeat;
+	background-size:cover;
+}
+
+.cosplay .large-image.blueprint {
+	background:url("images/cosplay-blueprint.jpg") center center no-repeat;
+	background-size:cover;
+}
+
+.clique .large-image{
+	background:url("images/sosmap.jpg") top center no-repeat;
+	background-size:cover;
+}
+
+.sdcc .color {
+	height:132px;
+}
+
+.sdcc .headline-font {
+	height:132px;
+	background:url("images/komika-axis.jpg") center center no-repeat;
+}
+
+.sdcc .subhead-font {
+	height:132px;
+	background:url("images/komika-hand.jpg") center center no-repeat;
+}
+
+.color h3 {
+	padding:0;
+	font-size:14px;
+}
+
+.blue-box {
+	background:#00bbf3;
+}
+
+.red-box {
+	background:#ff0000;
+}
+
+.yellow-box {
+	background:#fff200;
+}
+
+.black-box {
+	background:black;
+}
+
+.white-box {
+	background:white;
+	border:1px solid gray;
+}
+
+.intro-copy .first-line {
+	padding-bottom:20px;
+}
+
+.intro-copy .second-line {
+	padding-top:20px;
+}
+
+.halftone {
+	background:url("images/halftone.jpg")top center no-repeat;
+	background-size:100%;
+}
+
+.second-color {
+	padding-top:20px;
+	padding-bottom: 100px;
+}
+
+.sdcc .large-image.finish {
+	background:url("images/sdcc-finish.jpg") center center no-repeat;
+	background-size:cover;
+}
+
+.cosplay .large-image.finish {
+	background:url("images/COSPLAY-END.jpg") center center no-repeat;
+	background-size:cover;
+}
+
+.glass .large-image.finish {
+	background:url("images/glass-END.jpg") center center no-repeat;
+	background-size:cover;
+}
+.forsaken .large-image.finish {
+	background:url("images/forsaken-finish.jpg") center center no-repeat;
+	background-size:cover;
+}
+
+.clique .large-image.finish {
+	background:url("images/CLIQUE-END.jpg") center center no-repeat;
+	background-size:cover;
+}
+
+
+/* Work Footer */
+
+.col-2-5.box {
+	height:100px;
+	width:40%;
+}
+
+#sdcc {
+	background:url("images/sdcc-thumbnail-small.jpg") center center no-repeat;
+}
+#cosplay-connect {
+	background:url("images/cosplay-connect.png") center center no-repeat;
+}
+#sdcc-glass {
+	background:url("images/glass-thumb.jpg") center center no-repeat;
+}
+
+#forsaken {
+	background:url("images/forsaken.png") center center no-repeat;
+}
+#clique{
+	background:url("images/clique.png") center center no-repeat;
+}
+#impact {
+	background:url("images/impact.jpg") center center no-repeat;
+}
+
+.other.home {
+	height:100px;
+	padding:0;
+}
+
+.other.home h3 {
+	line-height:100px;
+	padding: 0;
+	text-align: center;
+}
+
+/* .work-shape {
+  clip-path: circle(250px, 250px, 250px);
+} */
+
+.grid.first-line {
+	padding-top:0;
+}
+
+.overlay-work {
+	position:absolute;
+	top:0;
+	width:100%;
+	height:250px;
+	padding-right:20px;
+	z-index:2;
+	opacity:0;
+	-webkit-transition:opacity 0.3s ease-in;
+	-moz-transition:opacity 0.3s ease-in;
+}
+
+.overlay-text {
+	color:white;
+}
+
+.overlay-text h3 {
+	border-bottom:1px solid white;
+	margin:0 20px;
+	padding-bottom:5px;
+}
+
+.overlay-text p {
+	margin-top:10px;
+	font-style:italic;
+}
+
+.height-equal:hover .overlay-work {
+	opacity:1;
+}
+
+[class="height-equal"]:hover .overlay-work {
+	opacity:1;
+}
+
+.orange-overlay {
+	background-color:rgba(247,148,30,.75);
+	width:250px;
+	height:250px;
+}
+
+.circle-center {
+	width:100%;
+	height:250px;
+}
+
+.last-col {
+	padding-right: 0px;
+}
+
+.keyline {
+	width: 100%;
+	height: 1px;
+	border-bottom:1px solid #404040;
+}
+
+@-moz-document url-prefix() {
+                        .orange-overlay {
+                        	position:relative;
+                        	margin: -23px;
+                    	}
+                    	.last-col .orange-overlay {
+                    		
+                    	}
+
+                    	.firefox-sucks {
+                    		position:absolute;
+                    		width:100%;
+                    		height:100%;
+                    	}
+
+                    	.overlay-work {
+                    		position:relative;
+                    	}
+
+                    	.keyline {
+                    		height:50px;
+                    	}
+                    }
+
+.solution p {
+	text-align:left;
+}
+
+.solution .grid {
+	padding:0;
+}
+
+.sdcc .solution-image {
+	height:650px;
+	background:url("images/old-new.jpg") center center no-repeat;
+	background-size:100%;
+}
+
+.cosplay .solution-image {
+	height:650px;
+	background:url("images/cosplay-process.jpg") center center no-repeat;
+	background-size:100%;
+}
+
+.glass .solution-image {
+	height:650px;
+	background:url("images/glass-comps.jpg") center center no-repeat;
+	background-size:100%;
+}
+
+.glass .solution{
+	overflow:hidden;
+}
+
+.forsaken .solution-image {
+	height:650px;
+	background:url("images/books.jpg") center center no-repeat;
+	background-size:100%;
+}
+
+.forsaken .solution{
+	overflow:hidden;
+	background:#303030;
+}
+
+.clique .solution-image {
+	height:650px;
+	background:url("images/CLICK-LEVELS.jpg") center center no-repeat;
+	background-size:100%;
+}
+
+.pdf-link {
+	border:3px solid white;
+	padding:10px;
+}
+.color-text {
+	padding:100px 100px 0px 100px;
+}
+
+.large-image .grid {
+	padding:0;
+}
+
+.link a {
+	text-decoration:none;
+	color:white;
+}
+
+.slicknav_menu {
+     display:none;
+}
+
+.menu {
+	display:inline-block;
+	position:absolute;
+	right:0;
+	top:0;
+	padding-right:20px;
+}
+
+@media (max-width: 1080px) {
+	.thought-bubble {
+		width:70%;
+	}
+}
+
+@media (min-width: 1024px) {
+    .height-equal:hover .circle{
+		border-radius:0;
+		width:100%;
+		height:250px;
+		width:250px;
+	}
+}
+
+@media (max-width: 1024px) {
+	/* #menu is the original menu */
+	#menu {
+		display:none;
+	}
+	
+	.slicknav_menu {
+		display:block;
+	}
+
+	.col-1-5 {
+		width:20%;
+		margin:0;
+		padding:0;
+		float:left;
+	}
+
+	.col-2-5 {
+		width:40%;
+		margin:0;
+		padding:0;
+		float:left;
+	}
+
+	.area, .color-area {
+		height:100%;
+	}
+
+	.ibeacon {
+		height:190px;
+	}
+
+	[class*='col-']:last-of-type {
+		padding-right:20px;
+	}
+
+	.work [class*='col-']:last-of-type {
+		padding-right:0;
+	}
+
+	.clique-level {
+		height:400px;
+	}
+
+	.clique-level .box {
+		height:100%;
+	}
+
+	.clique-text {
+		width:63%;
+		height:100%;
+	}
+
+
+	.intro-wrapper {
+	width:100%;
+	height:auto;
+	background:url("images/home-header-2-mobile.jpg") center center;
+	background-size:cover;
+	}
+
+	.grid {
+		padding:0;
+	}
+
+	h1 {
+		font-size: 45px;
+		line-height: 56px;
+	}
+
+	.case-study h2 {
+		font-size: 26px;
+		line-height: 40px;
+	}
+
+	.case-study .box {
+		height:100%;
+	}
+
+	.box {
+		height:100%;
+	}
+
+	.case-study p, .case-study h3 {
+		font-size: 18px;
+		line-height: 30px;
+		padding:50px;
+		text-align:left;
+	}
+
+	.area p, .area h3 {
+		font-size: 18px;
+		line-height: 30px;
+		padding:50px;
+		text-align: left;
+	}
+
+	.thought-bubble {
+		width:100%;
+	}
+
+	.thought-bubble p {
+		padding:10px 0;
+	}
+
+	.about.section {
+		padding-right:10px;
+		padding-left:10px;
+	}
+
+	.orange-overlay {
+		width:100%;
+	}
+
+	.overlay-work, .col-4-12 {
+		padding:0;
+		margin-bottom:0;
+		opacity:1;
+		height:150px;
+	}
+
+	.circle{
+		border-radius:0;
+		width:100%;
+		height:150px;
+		padding:0;
+	}
+
+	#sdcc {
+		background-size:cover;
+	}
+
+	#cosplay-connect {
+		background-size:cover;
+	}
+
+	#sdcc-glass {
+		background-size:cover;
+	}
+
+	#forsaken {
+		background-size:cover;
+	}
+
+	#impact {
+		background-size:cover;
+	}
+
+	#clique {
+		background-size:cover;
+	}
+
+	.height-equal{
+		height:150px;
+		padding:0;
+	}
+
+	.orange-overlay {
+		height:150px;
+		padding:0;
+	}
+
+	#sdcc {
+		background:url("images/placeholder.png") center center no-repeat;
+		background-size:cover;
+	}
+
+	.solution-image {
+		height: 450px;
+
+	}
+
+	.social-icons {
+		width:167px;
+	}
+
+	.col-1-3.end {
+		padding:0;
+	}
+
+	.case-study .work {
+		padding: 0;
+	}
+
+	.menu {
+		top:18px;
+
+	}
+
+	.slicknav_nav{
+		line-height:40px;
+	}
+
+	.other.grid .col-4-12 {
+		padding:0;
+	}
+
+	.case-study .other {
+		
+	}
+
+	.case-study .other .col-4-12:first-child {
+		display:none;
+	}
+
+	.case-study .other .col-4-12:last-child {
+		display:none;
+	}
+
+	.keyline {
+	
+	}
+
+	.title-header .table {
+		background: rgba(0,0,0,.5);
+	}
+
+	.overlay-text h3, .overlay-text p {
+		padding:10px;
+		text-align:center;
+	}
+
+	.footer h3, .footer p {
+		text-align:center;
+	}
+
+	.other.home {
+	display:block;
+	margin-top:10px;
+	}
+
+	.offset {
+		height:0;
+	}
+
+	.ibeacon-text {
+		width: 100%;
+		height: 100%;
+	}
+
+	@-moz-document url-prefix() {
+
+		.overlay-work {
+			position:absolute;
+		}
+
+		.orange-overlay {
+			display:block;
+			margin:0;
+		}
+
+		.circle-center {
+			display:block;
+		}
+
+		.height-equal {
+			overflow:hidden;
+		}
+
+	}
+
+
+
+
+}
+
+@media (max-width: 700px) {
+		.col-1-5 {
+			width:38.33%;
+			padding: 0 10px;
+		}
+
+		.col-2-5 {
+			width:30%;
+		}
+
+		.col-2-5.box {
+			width:30%;
+		}
+
+	}
+
+@media (max-width: 510px) {
+	.sdcc .solution-image {
+		height:300px;
+	}
+	.cosplay .solution-image {
+		height:300px;
+	}
+	.clique .solution-image {
+		height:300px;
+	}
+	.glass .solution-image {
+		height:300px;
+	}
+	.forsaken .solution-image {
+		height:300px;
+	}
+
+	.sdcc .headline-font {
+		background-size:100%;
+	}
+}
