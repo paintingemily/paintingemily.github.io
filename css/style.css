@@ -1179,3 +1179,12 @@ footer {
 		background-size:100%;
 	}
 }
+
+.new {
+	text-align: center;
+}
+
+.new img {
+	padding-top: 10px;
+    max-height: 100vh;
+}
